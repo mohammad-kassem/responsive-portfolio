@@ -1,3 +1,33 @@
-p{
-    font-weight: bold;
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-body-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1200px;
+    background-color: blue;
+}
+
+.main-body-container > div.left-side{
+    display: flex;
+    margin:0;
+    padding: 0px;
+    flex-direction: column;
+    width: 400px;
+}
+
+.main-body-container > div.right-side{
+    display: flex;
+    margin:0;
+    padding: 00px;
+    flex-direction: column;
+    background-color: white;
+    width: 800px;
 }
