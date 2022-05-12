@@ -3,7 +3,6 @@
     display: flex;
     background-color: white;
     place-content: center;
-    height: 100vh;
 }
 
 /*defining the left and right flex container*/
@@ -76,14 +75,14 @@
 }
 
 .summary{
-    flex-basis: 20%;
+    flex-basis: 10%;
     text-align: left;
     margin-left: 5%;
 
 }
 
 .experience{
-    flex-basis: 20%;
+    flex-basis: 15%;
     text-align: left;
     text-justify: right;
     margin-left: 5%;
@@ -97,7 +96,7 @@
     margin-left: 5%;
 }
 
-/* defining the left list nad right lists classes; the flex items of hobbies */
+/* defining the left list and right lists classes; the flex items of hobbies */
 .hobbies > .left-list{
     flex-basis: 50%;
     place-content: space-between;
@@ -109,17 +108,17 @@
 }
 
 .education{
-    flex-basis: 20%;
+    flex-basis: 15%;
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-left: 5%;
 }
 
 /* defining the rows and data of the education table */
 .education > .row{
     flex-basis: 33.3%;
     display: flex;
-    margin: 5px;
     align-items: center;
 }
 
@@ -133,12 +132,32 @@
 
 .row > .col3{
     flex-basis: 5%;
+    text-align: right;
 }
 
 .right-part > .footer{
     background-color: darkred;
     border: 2px solid black;
 }
+
+.skills{
+    flex-basis: 25%;
+    display: flex;
+    margin-left: 5%;
+    place-items: space-between;
+}
+
+.skills > .skill{
+    flex-basis: 60%;
+}
+
+.rating{
+    flex-basis: 40%;
+    text-align: right;
+    border: 1px solid;
+}
+
+
 
 /*defining other styles for different tags */
 
@@ -151,6 +170,10 @@ ul{
     margin-left: 0;
     padding-left: 0;
     list-style-type: none;
+}
+
+h3{
+    margin-left:5%;
 }
 
 p{
