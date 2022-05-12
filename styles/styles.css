@@ -73,7 +73,77 @@
 }
 
 /* defining the flex items of the right part*/
+.right-part > .header{
+    flex-basis: 10%;
+    background-color: white;
+    border: 2px solid black;
+}
 
+.summary{
+    flex-basis: 20%;
+    text-align: left;
+    text-justify: right;
+    margin-left: 5%;
+
+}
+
+.experience{
+    flex-basis: 20%;
+    text-align: left;
+    text-justify: right;
+    margin-left: 5%;
+}
+
+.hobbies{
+    flex-basis: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 50%;
+}
+
+/* defining the left list nad right lists classes; the flex items of hobbies */
+.hobbies > .left-list{
+    flex-basis: 50%;
+    place-content: space-between;
+}
+
+.hobbies > .right-list{
+    flex-basis: 50%;
+    place-content: space-between;
+}
+
+.education{
+    flex-basis: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.education > .row{
+    flex-basis: 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > .col1{
+    flex-basis: 40%;
+}
+
+.row > .col2{
+    flex-basis: 40%;
+}
+
+.row > .col2{
+    flex-basis: 20%;
+}
+
+.right-part > .footer{
+    background-color: darkred;
+    border: 2px solid black;
+}
 
 /*defining other styles for different tags */
 
