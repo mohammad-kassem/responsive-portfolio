@@ -16,8 +16,9 @@ body{
     margin: 10;
     padding: 0;
     flex-direction: column;
-    background-color: darkred;
-    border: 2px solid black;
+    color: white;
+    background-color: darkslateblue;
+    border-right: 5px double black;
     place-content: space-between;
     flex-basis: 280px;
     
@@ -34,10 +35,6 @@ body{
 }
 
 /* defining the flex items of the left part*/
-.left-side > .header{
-    flex-basis: 10%;
-}
-
 .name{
     position: relative;
     flex-basis: 20%;
@@ -58,34 +55,45 @@ body{
 
 }
 
+.contact > a:link{
+    color: white;
+}
+
+.contact > a:visited{
+    color: rgb(236, 86, 111);
+}
+
+.contact > a:active{
+    color:greenyellow;
+}
+.contact > a.hover{
+    color: red
+}
+
+
+
+
 .languages{
     flex-basis: 20%;
     text-align: left;
     margin-left: 10%;
 }
 
-.left-side > .footer{
-    flex-basis: 10%;
-}
 
 /* defining the flex items of the right part*/
-.right-part > .header{
-    flex-basis: 10%;
-    background-color: white;
-    border: 2px solid black;
+.right-side > h2{
+    color: darkslateblue;
 }
 
 .summary{
     flex-basis: 10%;
-    text-align: left;
+    text-align: justify;
     margin-left: 5%;
-
 }
 
 .experience{
     flex-basis: 15%;
     text-align: left;
-    text-justify: right;
     margin-left: 5%;
 }
 
@@ -136,10 +144,6 @@ body{
     text-align: right;
 }
 
-.right-part > .footer{
-    background-color: darkred;
-    border: 2px solid black;
-}
 
 .skills{
     flex-basis: 25%;
@@ -186,13 +190,11 @@ body{
 }
 
 
-
 /*defining other styles for different tags */
 
 img.round{
     border-radius: 50%;
 }
-
 
 ul{
     margin-left: 0;
