@@ -4,20 +4,16 @@
     background-color: white;
     place-content: center;
     height: 100vh;
-    margin: 0;
-    margin-left: 250px;
-    border: 2px solid black
 }
 
 /*defining the left and right flex container*/
 .main-body-container > div.left-side{
     display: flex;
-    flex-wrap: warp;
-    margin:0;
+    margin: 10;
     padding: 0;
     flex-direction: column;
     place-content: space-between;
-    flex-basis: 200px;
+    flex-basis: 280px;
     
 }
 
@@ -29,7 +25,7 @@
     flex-direction: column;
     background-color: white;
     place-content: space-between;
-    flex-basis: 800px;
+    flex-basis: 600px;
 }
 
 /* defining the flex items of the left part*/
