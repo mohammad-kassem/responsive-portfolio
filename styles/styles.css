@@ -17,7 +17,7 @@ body{
     padding: 0;
     flex-direction: column;
     color: white;
-    background-color: darkslateblue;
+    background-color: steelblue;
     border-right: 5px double black;
     place-content: space-between;
     flex-basis: 280px;
@@ -35,12 +35,10 @@ body{
 
 /* defining the flex items of the left part*/
 .name{
-    position: relative;
     flex-basis: 20%;
     text-align: center;
 
 }
-
 
 .image{
     flex-basis: 20%;
@@ -69,9 +67,6 @@ body{
     color: red
 }
 
-
-
-
 .languages{
     flex-basis: 20%;
     text-align: left;
@@ -80,8 +75,8 @@ body{
 
 
 /* defining the flex items of the right part*/
-.right-side > h2{
-    color: darkslateblue;
+.right-side h2{
+    color: steelblue;
 }
 
 .summary{
