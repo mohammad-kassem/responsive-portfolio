@@ -26,7 +26,6 @@ body{
 
 .main-body-container > div.right-side{
     display: flex;
-    flex-wrap: warp;
     margin: 0;
     padding: 0;
     flex-direction: column;
@@ -205,3 +204,10 @@ ul{
 i.fa-solid{
     color: gold;
 }
+
+/* change to one column-layout instead of two-column layout when space is limited*/
+@media (max-width: 800px) {
+    .main-body-container{
+      flex-direction: column;
+    }
+  }
