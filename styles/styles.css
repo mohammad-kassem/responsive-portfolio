@@ -141,18 +141,46 @@ body{
     border: 2px solid black;
 }
 
-.soft-skills{
+.skills{
     flex-basis: 25%;
     display: flex;
     margin-left: 5%;
+    flex-direction: column;
+}
+
+.programmin-languages{
+    flex-basis: 20%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    height: 10%;
+}
+
+.programmin-languages > .title{
+    flex-basis: 18%;
+}
+
+.programmin-languages > .text{
+    flex-basis: 82%;
+}
+
+.soft-skills{
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
     place-items: space-between;
 }
 
-.soft-skills > .skill{
+.soft-skills > .skill-row{
+    flex-basis: 25;
+    display: flex;
+}
+
+.skill-row > .skill{
     flex-basis: 60%;
 }
 
-.soft-skills > .rating{
+.skill-row > .rating{
     flex-basis: 40%;
     text-align: right;
 }
@@ -170,10 +198,6 @@ ul{
     margin-left: 0;
     padding-left: 0;
     list-style-type: none;
-}
-
-h3{
-    margin-left: 5%;
 }
 
 i.fa-solid{
