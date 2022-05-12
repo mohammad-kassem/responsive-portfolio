@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 /* defining the main flex container that will split the document in two*/
 .main-body-container{
     display: flex;
@@ -11,6 +16,8 @@
     margin: 10;
     padding: 0;
     flex-direction: column;
+    background-color: darkred;
+    border: 2px solid black;
     place-content: space-between;
     flex-basis: 280px;
     
@@ -22,7 +29,6 @@
     margin: 0;
     padding: 0;
     flex-direction: column;
-    background-color: white;
     place-content: space-between;
     flex-basis: 600px;
 }
@@ -30,15 +36,12 @@
 /* defining the flex items of the left part*/
 .left-side > .header{
     flex-basis: 10%;
-    background-color: darkred;
-    border: 2px solid black;
 }
 
 .name{
     position: relative;
     flex-basis: 20%;
     text-align: center;
-    background-color: white;
 
 }
 
@@ -63,8 +66,6 @@
 
 .left-side > .footer{
     flex-basis: 10%;
-    background-color: white;
-    border: 2px solid black;
 }
 
 /* defining the flex items of the right part*/
@@ -140,21 +141,20 @@
     border: 2px solid black;
 }
 
-.skills{
+.soft-skills{
     flex-basis: 25%;
     display: flex;
     margin-left: 5%;
     place-items: space-between;
 }
 
-.skills > .skill{
+.soft-skills > .skill{
     flex-basis: 60%;
 }
 
-.rating{
+.soft-skills > .rating{
     flex-basis: 40%;
     text-align: right;
-    border: 1px solid;
 }
 
 
@@ -173,9 +173,9 @@ ul{
 }
 
 h3{
-    margin-left:5%;
+    margin-left: 5%;
 }
 
-p{
-    text-justify: right;
+i.fa-solid{
+    color: gold;
 }
