@@ -1,13 +1,12 @@
 /* defining the main flex container that will split the document in two*/
 .main-body-container{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 1200px;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: blue;
+    background-color: white;
+    place-content: center;
+    height: 100vh;
+    margin: 0;
+    margin-left: 250px;
+    border: 2px solid black
 }
 
 /*defining the left and right flex container*/
@@ -18,7 +17,8 @@
     padding: 0;
     flex-direction: column;
     place-content: space-between;
-    flex-basis: 30%;
+    flex-basis: 200px;
+    
 }
 
 .main-body-container > div.right-side{
@@ -29,7 +29,7 @@
     flex-direction: column;
     background-color: white;
     place-content: space-between;
-    flex-basis: 70%;
+    flex-basis: 800px;
 }
 
 /* defining the flex items of the left part*/
@@ -82,7 +82,6 @@
 .summary{
     flex-basis: 20%;
     text-align: left;
-    text-justify: right;
     margin-left: 5%;
 
 }
@@ -122,6 +121,7 @@
     margin-left: 5%;
 }
 
+/* defining the rows and data of the education table */
 .education > .row{
     flex-basis: 33.3%;
     display: flex;
@@ -158,3 +158,6 @@ ul{
     list-style-type: none;
 }
 
+p{
+    text-justify: right;
+}
